@@ -1,0 +1,101 @@
+/* STEP 1*/
+
+/* @keyframes mymove { 
+    0%
+} */
+
+
+/* STEP 2*/
+body { 
+    font-family: "Poppins", serif;
+    background-image: url("../images/concrete_seamless.png"), #f1f1f1;
+
+}
+
+/* STEP 3*/
+
+header { 
+    display: flex;
+    justify-content: center;
+}
+
+
+/* STEP 4*/
+
+.nav_links{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* STEP 5*/
+
+/* STEP 6*/
+.card > header { 
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding: 20px;
+    border-radius: 50px 50px 0px 50px;
+}
+
+
+/* STEP 7*/
+
+.card { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*finish this*/
+}
+
+
+/* STEP 8*/
+
+.pricing { 
+    display: flex;
+    /*finish this*/
+}
+
+/* STEP 9*/
+
+.gallery img { 
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+/* STEP 10*/
+
+
+/* STEP 11*/
+
+@media screen and (min-width: 900px){
+
+/* STEP 12*/
+
+/* STEP 13*/
+
+}
+
+/* STEP 14*/
+
+@media screen and (prefers-reduced-motion: reduce){
+
+}
+
+/* STEP 15*/
+
+/* STEP 16*/
+
+/* STEP 17*/
+
+/* STEP 18*/
+
+/* STEP 19*/
+
+/* STEP 20*/
+
+/* STEP 21*/
