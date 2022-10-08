@@ -8,7 +8,7 @@
 /* STEP 2*/
 body { 
     font-family: "Poppins", serif;
-    background-image: url("../images/concrete_seamless.png"), #f1f1f1;
+    background-image: url("../images/concrete_seamless.png");
 
 }
 
@@ -45,10 +45,9 @@ header {
 
 .card { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    /*finish this*/
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 
@@ -56,6 +55,7 @@ header {
 
 .pricing { 
     display: flex;
+    flex-direction: column;
     /*finish this*/
 }
 
@@ -73,8 +73,33 @@ header {
 /* STEP 11*/
 
 @media screen and (min-width: 900px){
+    header { 
+        display: flex;
+        justify-content:space-between; 
+    }
+
+    .nav_links{
+        display:flex;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
 
 /* STEP 12*/
+
+/*look at directions boaut specificing size of 275px*/
+
+.card { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+}
 
 /* STEP 13*/
 
