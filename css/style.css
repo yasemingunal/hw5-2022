@@ -53,6 +53,7 @@ header {
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
+    border-radius:50px;
 }
 
 
