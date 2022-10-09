@@ -1,9 +1,16 @@
 /* STEP 1*/
 
-/* @keyframes mymove { 
-    0%
-} */
+@keyframes logoanimate { 
+    from {width:25px;}
+    to {width:475px;}
+    from {opacity:0;}
+    to {opacity:1;}
+}
 
+#logo { 
+    animation-name: logoanimate;
+    animation-duration:5s;
+}
 
 /* STEP 2*/
 body { 
@@ -68,7 +75,11 @@ header {
 }
 
 /* STEP 10*/
-
+.gallery { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* STEP 11*/
 
@@ -87,7 +98,7 @@ header {
 
 /* STEP 12*/
 
-/*look at directions boaut specificing size of 275px*/
+/*look at directions about specificing size of 275px*/
 
 .card { 
     display: flex;
@@ -108,19 +119,54 @@ header {
 /* STEP 14*/
 
 @media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        animation-name:none;
+    }
+
+    /*not sure if this is correct*/
 
 }
 
-/* STEP 15*/
+/* STEP 15: CHECK */
+
+@media print { 
+    body { 
+        font-family: Arial, Helvetica;
+        background-image:none;
+    }
+
 
 /* STEP 16*/
 
 /* STEP 17*/
+.nav_links{
 
-/* STEP 18*/
+}
+
+/* STEP 18: CHECK */
+
+.pricing{
+    align-items:baseline;
+}
 
 /* STEP 19*/
 
+.card { 
+    border: solid 2px #45ADDD;
+    flex-basis:325px;
+    content: \1F44D;
+}
+
 /* STEP 20*/
 
+.gallery{
+    visibility:hidden;
+}
+
 /* STEP 21*/
+
+    .class li:second-child{
+        content: "\01F354";
+    }
+
+}
