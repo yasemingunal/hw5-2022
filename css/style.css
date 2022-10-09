@@ -1,109 +1,170 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 16pt; /* test for this! Make all sizes em or rem */
-  }
-  
-  header{
-    background: #fff;
-    border-bottom: 3px solid #50C7C7;
-    margin-bottom:20px
-  }
-  
-  h1{
-    font-size: 2em;
-    text-align: center;
-    line-height: 2;
-  }
-  
-  h2{
-    font-size: 1.5em;
-    text-align: center;
-    padding: 5px;
-  }
-  
-  p {
-    padding: 0 30px;
-  }
-  
-  a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
-  
-  *:focus{
-    border: 2px solid black;
-  }
+/* STEP 1*/
+@keyframes logoanimate { 
+    from {width:25px;}
+    to {width:475px;}
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+#logo { 
+    animation-name: logoanimate;
+    animation-duration:5s;
+}
+
+/* STEP 2*/
+body { 
+    font-family: "Poppins", serif;
+    background-image: url("../images/concrete_seamless.png");
+}
+
+/* STEP 3*/
+header { 
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
 
 
-  .nav_item a{
-    padding: 10px;
-  }
-  
-  .nav_item a:hover, a:focus{
-    color: #50C7C7;
-    text-decoration: underline;
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-  }
+/* STEP 4*/
+.nav_links{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
 
-  .pricing{
-    min-height: 475px;
-  }
+/* STEP 5*/
 
-  .card {
-    margin: 12px;
-    background: #fff;
-    border-radius:50px;
-    /*border-radius: 7px;*/
-    padding: 0 0 25px 0; 
-  
-  }
 
-  .card > ul{
-    list-style: none;
-    padding-left: 5px;
-  }
-  
-  .card > ul li {
-    width: 90%;
-    margin: 20px auto;
-  }
+/* STEP 6*/
+.card > header { 
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding: 0px;
+    border-radius: 50px 50px 0px 0px;
+}
 
-.card button{
-    width: 90%;
-    height: 40px;
-    border: 0;
-    margin-left: 5%;
-    border-radius: 7px;
-    background: #288080;
-    color: white;
-    font-size: 1em;
-  }
-  
-  .card h3{
-    font-size: 4em;
-    color: white;
-    text-align: center;
-  }
-  
-  footer{
-    background-color: black;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  }
 
-  
+/* STEP 7*/
+.card {  /*corners rounding needs fixing*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+
+/* STEP 8*/
+.pricing { 
+    display: flex;
+    flex-direction: column;
+    /*finish this*/
+}
+
+/* STEP 9*/
+.gallery img { 
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+/* STEP 10*/
+.gallery { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* STEP 11*/
+@media screen and (min-width: 900px){
+    header { 
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+    }
+
+    .nav_links{    /*these should be centered vertically? */
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+    }
+
+
+/* STEP 12*/
+
+/*look at directions about specificing size of 275px*/
+
+.card { /*corners rounding needs fixing*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+}
+
+/* STEP 13*/
+
+}
+
+/* STEP 14*/
+
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        animation-name:none;
+    }
+
+    /*not sure if this is correct*/
+
+}
+
+/* STEP 15: CHECK */
+
+@media print { 
+    body { 
+        font-family: Arial, Helvetica;
+        background-image:none;
+    }
+
+
+/* STEP 16*/
+
+/* STEP 17*/
+.nav_links{
+
+}
+
+/* STEP 18: CHECK */
+
+.pricing{
+    align-items:baseline;
+}
+
+/* STEP 19*/
+
+.card { 
+    border: solid 2px #45ADDD;
+    flex-basis:325px;
+    content: \1F44D;
+}
+
+/* STEP 20*/
+
+.gallery{
+    visibility:hidden;
+}
+
+/* STEP 21*/
+
+.class li:second-child{
+    content: "\01F354";
+}
+
+}
