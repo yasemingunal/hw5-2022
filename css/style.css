@@ -47,7 +47,7 @@ header {
 .card > header { 
     background-color: #288088;
     border: solid 2px #45ADAD;
-    padding: 0px;
+    padding: 20px 0px;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -55,11 +55,13 @@ header {
 /* STEP 7*/
 .card { 
     display: flex;
+    margin: 10px 100px;
     flex-basis:450px;
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
-    border-radius:50px;
+    border-radius: 50px 50px 0px 0px;
+
 }
 
 
@@ -99,22 +101,23 @@ header {
         align-items:center;
         align-content:center;
         flex-direction:row;
+        /* flex-direction:center; */
     }
 
 
 /* STEP 12*/
 
-/*look at directions about specificing size of 275px*/
-
     .card { /*corners rounding needs fixing*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content:center;
-        flex-flow: column wrap;
-        flex-grow: 1;
-        flex-basis: 275px;
-    }
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            /* align-content:center; */
+            flex-flow: column wrap;
+            flex-grow: 1;
+            flex-basis: 275px;
+            border-radius: 50px 50px 0px 0px;
+
+        }
 
     .pricing{
         display: flex;
@@ -159,7 +162,6 @@ header {
     .pricing{
         align-content:baseline;
         flex-direction:row;
-
     }
 
 /* STEP 19*/
@@ -168,24 +170,19 @@ header {
         border: solid 2px #45ADDD;
         flex-direction:column;
         flex-wrap: wrap;
-        /* flex-flow: column wrap; */
         flex-basis:325px;
         border-radius: 50px 50px 0px 0px;
-
     }
 
 /* STEP 20*/
-
     #gallery, .gallery{
         display:none;
     }
 
 
 /* STEP 21*/
-
-    .card li:second-child{
-        color: yellow;
-        content: "\01F354";
+    .card  li:nth-child(2n)::after{
+        content: "\01F44D";    
     }
 
 }
