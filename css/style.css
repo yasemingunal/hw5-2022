@@ -33,10 +33,14 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-}
+    color:#0000FF;
 
+}
 /* STEP 5*/
 
+.nav_item a:visited{
+    color:inherit;
+}
 
 /* STEP 6*/
 .card > header { 
@@ -48,8 +52,9 @@ header {
 
 
 /* STEP 7*/
-.card {  /*corners rounding needs fixing*/
+.card { 
     display: flex;
+    flex-basis:450px;
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
@@ -74,6 +79,7 @@ header {
 /* STEP 10*/
 .gallery { 
     display:flex;
+    flex-direction:wrap;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -99,20 +105,28 @@ header {
 
 /*look at directions about specificing size of 275px*/
 
-.card { /*corners rounding needs fixing*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: column wrap;
-}
+    .card { /*corners rounding needs fixing*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        flex-flow: column wrap;
+        flex-grow: 1;
+        flex-basis: 275px;
+    }
 
-.pricing{
-    display: flex;
-    flex-direction: row;
-}
+    .pricing{
+        display: flex;
+        flex-direction: row;
+    }
 
 /* STEP 13*/
-
+    body > header { 
+        width: 100%;
+        position:-webkit-sticky;
+        position:sticky;
+        top:0;
+    }
 }
 
 /* STEP 14*/
@@ -138,9 +152,9 @@ header {
 /* STEP 16*/
 
 /* STEP 17*/
-.nav_links{
+/* .nav_links{
 
-}
+} */
 
 /* STEP 18: CHECK */
 
