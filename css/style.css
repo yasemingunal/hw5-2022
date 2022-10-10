@@ -60,6 +60,7 @@ header {
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
+    /* padding: 0px; */
     border-radius: 50px 50px 0px 0px;
 
 }
@@ -113,9 +114,9 @@ header {
             /* justify-content: space-between; */
             /* align-content:center; */
             flex-flow: column wrap;
-            flex-grow: 1;
+            flex-grow: 3;
             flex-basis: 275px;
-            border-radius: 50px 50px 0px 0px;
+            /* border-radius: 50px 50px 0px 0px; */
 
         }
 
