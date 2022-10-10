@@ -15,6 +15,7 @@
 body { 
     font-family: "Poppins", serif;
     background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
 }
 
 /* STEP 3*/
@@ -135,9 +136,6 @@ header {
     #logo{
         animation-name:none;
     }
-
-    /*not sure if this is correct*/
-
 }
 
 /* STEP 15: CHECK */
@@ -145,41 +143,49 @@ header {
 @media print { 
     body { 
         font-family: Arial, Helvetica;
+        /* STEP 16*/
         background-image:none;
     }
 
-
-/* STEP 16*/
-
 /* STEP 17*/
-/* .nav_links{
-
-} */
+    .nav_links{
+        width:100%;
+        flex-direction:row;
+        justify-content:space-between;
+    }    
 
 /* STEP 18: CHECK */
 
-.pricing{
-    align-items:baseline;
-}
+    .pricing{
+        align-content:baseline;
+        flex-direction:row;
+
+    }
 
 /* STEP 19*/
 
-.card { 
-    border: solid 2px #45ADDD;
-    flex-basis:325px;
-    content: \1F44D;
-}
+    .card { 
+        border: solid 2px #45ADDD;
+        flex-direction:column;
+        flex-wrap: wrap;
+        /* flex-flow: column wrap; */
+        flex-basis:325px;
+        border-radius: 50px 50px 0px 0px;
+
+    }
 
 /* STEP 20*/
 
-.gallery{
-    visibility:hidden;
-}
+    #gallery, .gallery{
+        display:none;
+    }
+
 
 /* STEP 21*/
 
-.class li:second-child{
-    content: "\01F354";
-}
+    .card li:second-child{
+        color: yellow;
+        content: "\01F354";
+    }
 
 }
