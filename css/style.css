@@ -60,7 +60,6 @@ header {
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
-    /* padding: 0px; */
     border-radius: 50px 50px 0px 0px;
 
 }
@@ -70,6 +69,7 @@ header {
 .pricing { 
     display: flex;
     flex-direction: column;
+
     /*finish this*/
 }
 
@@ -99,30 +99,30 @@ header {
     .nav_links{    /*these should be centered vertically? */
         display:flex;
         justify-content: space-between;
-        align-items:center;
-        align-content:center;
         flex-direction:row;
-        /* flex-direction:center; */
+        margin: 20px
     }
 
 
 /* STEP 12*/
 
-    .card { /*corners rounding needs fixing*/
-            display: flex;
-            flex-direction: row;
-            /* justify-content: space-between; */
-            /* align-content:center; */
-            flex-flow: column wrap;
-            flex-grow: 3;
-            flex-basis: 275px;
-            /* border-radius: 50px 50px 0px 0px; */
+    .card { 
+        display: flex;
+        flex-basis: 275px;
+        justify-content: center;
+        height:fit-content;
+        margin: 10px 10px;
 
-        }
+    }
 
     .pricing{
         display: flex;
         flex-direction: row;
+        justify-content:center;
+        /* justify-content: center; */
+        /* align-content:flex-start; */
+        /* width: 100%; */
+        /* height:fit-content; */
     }
 
 /* STEP 13*/
@@ -142,7 +142,7 @@ header {
     }
 }
 
-/* STEP 15: CHECK */
+/* STEP 15: */
 
 @media print { 
     body { 
@@ -156,23 +156,24 @@ header {
         width:100%;
         flex-direction:row;
         justify-content:space-between;
+        margin: auto 0px;
     }    
 
-/* STEP 18: CHECK */
+/* STEP 18: */
 
     .pricing{
-        align-content:baseline;
+        align-items: flex-end;
         flex-direction:row;
+        justify-content:space-between;
     }
 
 /* STEP 19*/
 
     .card { 
         border: solid 2px #45ADDD;
-        flex-direction:column;
-        flex-wrap: wrap;
+        flex-grow:2;
         flex-basis:325px;
-        border-radius: 50px 50px 0px 0px;
+        margin: 10px 10px;
     }
 
 /* STEP 20*/
