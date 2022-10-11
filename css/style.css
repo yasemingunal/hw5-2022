@@ -39,12 +39,12 @@ header {
 }
 /* STEP 5*/
 
-.nav_item a:visited{
+.nav_item a:visited{ /*only styling the links AFTER they've been clicked on*/
     color:inherit;
 }
 
 /* STEP 6*/
-.card > header { 
+.card > header{ /*only styling the header of the cards */ 
     background-color: #288088;
     border: solid 2px #45ADAD;
     padding: 20px 0px;
@@ -69,19 +69,17 @@ header {
 .pricing { 
     display: flex;
     flex-direction: column;
-
-    /*finish this*/
 }
 
 /* STEP 9*/
-.gallery img { 
+.gallery img{ /* styling all images within the gallery class */ 
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
 }
 
 /* STEP 10*/
-.gallery { 
+.gallery{ 
     display:flex;
     flex-direction:wrap;
     flex-wrap: wrap;
@@ -89,14 +87,14 @@ header {
 }
 
 /* STEP 11*/
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px){ /*changing media screen to minimum width of 900px to style the larger screens only */
     header { 
         display: flex;
         justify-content:space-between;
         flex-direction: row;
     }
 
-    .nav_links{    /*these should be centered vertically? */
+    .nav_links{ 
         display:flex;
         justify-content: space-between;
         flex-direction:row;
@@ -105,7 +103,6 @@ header {
 
 
 /* STEP 12*/
-
     .card { 
         display: flex;
         flex-basis: 275px;
@@ -119,24 +116,20 @@ header {
         display: flex;
         flex-direction: row;
         justify-content:center;
-        /* justify-content: center; */
-        /* align-content:flex-start; */
-        /* width: 100%; */
-        /* height:fit-content; */
     }
 
 /* STEP 13*/
     body > header { 
         width: 100%;
-        position:-webkit-sticky;
-        position:sticky;
+        position:-webkit-sticky; 
+        position:sticky; /*sticky makes it move once it is reached through scrolling on the screen -- since it's at the top, it will immediately become fixed*/
         top:0;
     }
 }
 
 /* STEP 14*/
 
-@media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){ /*styling only for reduced motion users */
     #logo{
         animation-name:none;
     }
@@ -144,7 +137,7 @@ header {
 
 /* STEP 15: */
 
-@media print { 
+@media print { /*styling only the print screen*/
     body { 
         font-family: Arial, Helvetica;
         /* STEP 16*/
@@ -169,7 +162,7 @@ header {
 
 /* STEP 19*/
 
-    .card { 
+    .card{ 
         border: solid 2px #45ADDD;
         flex-grow:2;
         flex-basis:325px;
@@ -177,13 +170,13 @@ header {
     }
 
 /* STEP 20*/
-    #gallery, .gallery{
+    #gallery, .gallery{ /*styling both the gallery text and gallery images so they don't appear in the print screen*/
         display:none;
     }
 
 
 /* STEP 21*/
-    .card  li:nth-child(2n)::after{
+    .card li:nth-child(2n)::after{ /*only getting the second list element of each card, and putting the content AFTER the list item */
         content: "\01F44D";    
     }
 
